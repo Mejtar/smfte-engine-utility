@@ -1,0 +1,18 @@
+setlocal
+
+pushd "K:\Sitios\Repositorio\mftp" || exit /b 99
+
+
+:: En caso de usar env
+set VENV_PYTHON=".\env_mftp\Scripts\python.exe"
+set SCRIPT_PATH=".\MSFTP-Main.py"
+
+:: Para control-m
+%VENV_PYTHON% %SCRIPT_PATH% --fiid %1 %2
+
+
+
+set RET=%ERRORLEVEL%
+popd
+exit /b %RET%
+

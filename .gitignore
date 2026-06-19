@@ -1,0 +1,24 @@
+
+config/settings.yaml.example
+config/links.yaml.example
+
+
+logs/
+*.log
+
+journal/
+*.dbs
+*.lck
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+temporal/
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
