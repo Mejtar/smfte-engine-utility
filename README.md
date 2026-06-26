@@ -58,7 +58,7 @@ python3 MSFTP-Main.py --fiid 0000
 *   `config/links.yaml`: Rutas declarativas. Estructura:
     ```yaml
     routes:
-      - lnk: "NOMBRE_LINK"
+      - lnk: "NOMBRE"
         fiid_filter: "0000" # <-- tambien puede matchear "CARACTERES" o "MEZCLA1232"
         patterns: ["BATCH_*.DAT"]
         transport:
